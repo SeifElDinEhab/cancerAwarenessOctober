@@ -183,6 +183,7 @@ td {
 
 .mx-accordion .card-header h5 a.acc-btn[aria-expanded="true"] .plus-minus {
   background: url(./assets/img/circle-minus-solid.svg);
+  background-repeat: no-repeat;
 }
 
 .mx-accordion .card {
