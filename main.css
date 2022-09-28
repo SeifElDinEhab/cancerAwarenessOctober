@@ -1,10 +1,13 @@
 @font-face {
   font-family: "GE Dinar Two";
-  src: url("./assets/fonts/GEDinarTwo-Medium.woff2") format("woff2"),
-    url("./assets/fonts/GEDinarTwo-Medium.woff") format("woff");
+  src: url("./assets/fonts/GE Dinar Two Medium/GEDinarTwo-Medium.woff2")
+      format("woff2"),
+    url("./assets/fonts/GE Dinar Two Medium/GEDinarTwo-Medium.woff")
+      format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0-2f, U+40-10FFFF;
 }
 
 :root {
@@ -108,8 +111,9 @@ header > a {
 
 .btn_hero2 {
   padding: 5px 20px;
-  background-color: #fff;
-  border: 1.5px solid var(--color-prim);
+  background-color: var(--color-prim);
+  color: #fff;
+
   cursor: pointer;
   border-radius: 5px;
   width: fit-content;
@@ -118,8 +122,8 @@ header > a {
 }
 
 .btn_hero2:hover {
-  background-color: var(--color-prim);
-  color: #fff;
+  background-color: #fff;
+  color: var(--color-prim);
 }
 
 /* Section 1 */
@@ -137,10 +141,6 @@ header > a {
 .description {
   font-size: 1.5rem;
   direction: rtl;
-}
-
-.bc_img {
-  /* max-height: 350px; */
 }
 
 /* Section 2 */
@@ -211,6 +211,7 @@ td {
 
 .mx-accordion .card-header h5 a.acc-btn[aria-expanded="true"] .plus-minus {
   background: url(./assets/img/circle-minus-solid.svg);
+  background-repeat: no-repeat;
 }
 
 .mx-accordion .card {
@@ -331,6 +332,17 @@ td {
   background-repeat: no-repeat;
   background-position: -430px 5px;
   background-size: cover;
+}
+
+.circles_bg {
+  background-image: url(./assets/img/animated-shape.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media only screen and (max-width: 600px) {
+  .circles_bg {
+    background-image: url(./assets/img/animated-shape-mob.svg);
+  }
 }
 
 .page-link {
