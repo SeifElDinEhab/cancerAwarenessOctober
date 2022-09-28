@@ -77,6 +77,10 @@ header > a {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+  -moz-backdrop-filter: blur(3px);
+  -o-backdrop-filter: blur(3px);
+  -ms-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 
